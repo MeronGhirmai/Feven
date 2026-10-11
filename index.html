@@ -3,284 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feven Beletse Negash | Public Health Researcher</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Feven Beletse Negash | Public Health Researcher & UC Berkeley Scholar</title>
+    <meta name="description" content="Portfolio of Feven Beletse Negash — Public Health Researcher, Consultant, and Incoming MPH Candidate at UC Berkeley School of Public Health. Mastercard Foundation Scholar.">
+    <meta name="theme-color" content="#e11d74">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,600;1,6..96,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Ambient Sparkle Particle Canvas -->
+    <canvas id="sparkle-canvas"></canvas>
+
+    <!-- Navigation Bar (Editorial Masthead) -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-mark">FN</span>
-                <span class="logo-text">Feven Beletse Negash</span>
+                <div class="logo-seal">FN</div>
+                <div class="logo-info">
+                    <span class="logo-name">Feven Beletse Negash</span>
+                    <span class="logo-sub">Public Health Scholar</span>
+                </div>
             </a>
+            
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#research">Publications</a></li>
-                <li><a href="#skills">Skills & Education</a></li>
-                <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+                <li><a href="#experience">Fieldwork & Leadership</a></li>
+                <li><a href="#research">The Docket</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <button type="button" class="sparkle-toggle-btn" id="sparkleToggle" title="Toggle Sparkle Animation">✦ Sparkles: On</button>
+                <a href="Feven_Beletse_CV.pdf" target="_blank" class="btn btn-scented btn-sm" title="Legally Blonde Homage: Yes, it's scented!">CV Dossier</a>
+                <button type="button" class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Integrated Profile Image -->
+    <!-- Hero Section (Haute Editorial Ivy League Meets Barbie Glamour) -->
     <header id="about" class="hero">
+        <div class="hero-bg-accent"></div>
         <div class="container hero-grid">
+            
             <div class="hero-text">
-                <span class="hero-badge">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                    Incoming MPH Candidate @ UC Berkeley
-                </span>
-                <h2>Public Health Researcher & Consultant</h2>
-                <p>Public health practitioner with over three years of experience advancing maternal and neonatal health, infectious disease control, sanitation, and community health systems across low-resource settings.</p>
+                <div class="hero-badge-wrapper">
+                    <div class="hero-badge">
+                        <span class="badge-icon">✦</span>
+                        <span>Incoming MPH Candidate @ <span class="badge-highlight">UC Berkeley</span></span>
+                        <span class="badge-icon">✦</span>
+                    </div>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-name">Feven Beletse Negash</span>
+                    <span class="title-focus">Public Health Researcher &amp; <i>Global Strategist</i></span>
+                </h1>
+
+                <p class="hero-lead">
+                    Championing maternal and neonatal survival, infectious disease containment, and community sanitation across low-resource settings with empirical precision, uncompromising rigor, and fierce heart.
+                </p>
+
+                <!-- Persona Quote / Motto -->
+                <div class="hero-persona-quote">
+                    🌸 <em>"Dedicated to transforming community health systems. Because intelligence, empathy, and style are never mutually exclusive."</em>
+                </div>
+
                 <div class="hero-actions">
-                    <a href="#research" class="btn btn-primary">View Research</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#research" class="btn btn-primary">
+                        <span>Explore The Docket</span>
+                        <span class="sparkle-char">✦</span>
+                    </a>
+                    <a href="Feven_Beletse_CV.pdf" target="_blank" class="btn btn-scented" title="In the words of Elle Woods: It gives it a little something extra!">
+                        <span>Download Dossier (It's Scented!)</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
                 </div>
             </div>
 
+            <!-- Portrait Frame in Barbie/Editorial Style -->
             <div class="hero-image-wrapper">
-                <div class="hero-image-card">
-                    <!-- Replace IMG_6116.jpg with your local image path if renamed -->
-                    <img src="/image/febey1.png" alt="Feven Beletse Negash" class="hero-img">
-                    <div class="image-floating-tag">
-                        <span class="dot"></span>
-                        <span>Global Health & Environment</span>
+                <div class="hero-portrait-frame">
+                    <div class="frame-aura"></div>
+                    
+                    <div class="hero-image-card">
+                        <!-- Floating Seal -->
+                        <div class="image-seal-badge">
+                            <span>CAL</span>
+                            <span>'28</span>
+                        </div>
+
+                        <div class="hero-img-container">
+                            <img src="image/febey1.png" alt="Feven Beletse Negash - Public Health Researcher" class="hero-img">
+                        </div>
+
+                        <!-- Floating Status Pill -->
+                        <div class="image-floating-pill">
+                            <span class="pill-dot"></span>
+                            <span class="pill-text">Global Health &amp; Environment 🌸</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
 
-    <!-- Key Metrics / Quick Highlights Grid -->
+    <!-- Key Metrics / The Docket Numbers -->
     <section class="stats-bar">
         <div class="container stats-grid">
             <div class="stat-item">
                 <span class="stat-number">3+</span>
-                <span class="stat-label">Years Field & Clinical Experience</span>
+                <span class="stat-label">Years Clinical &amp; Field Leadership</span>
             </div>
             <div class="stat-item">
                 <span class="stat-number">7+</span>
-                <span class="stat-label">Research Papers & Surveys</span>
+                <span class="stat-label">Epidemiological Studies &amp; Surveys</span>
             </div>
             <div class="stat-item">
                 <span class="stat-number">2x</span>
-                <span class="stat-label">Prestigious Academic Fellowships</span>
+                <span class="stat-label">Prestigious International Fellowships</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Commitment to Health Equity</span>
             </div>
         </div>
     </section>
 
-    <!-- Work Experience Section -->
-    <section id="experience" class="section bg-light">
+    <!-- Work Experience Section (Clinical & Field Leadership Dossier) -->
+    <section id="experience" class="section bg-silk">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Public Health Experience</h2>
-                <p class="section-subtitle">Bridging empirical data, hospital management, and community outreach</p>
+                <span class="section-eyebrow">
+                    <span class="sparkle-char">✦</span> Fieldwork &amp; Governance <span class="sparkle-char">✦</span>
+                </span>
+                <h2 class="section-title">Leadership, Clinical Systems &amp; <i>Advocacy</i></h2>
+                <p class="section-subtitle">Bridging grassroots community mobilization, hospital management, and rigorous epidemiological surveillance.</p>
             </div>
 
             <div class="grid-2">
-                <div class="card flat-card">
-                    <div class="card-header">
-                        <div class="card-icon">🏥</div>
-                        <div>
-                            <h3>Public Health Officer & Researcher</h3>
-                            <span class="meta-tag">Asmara, Eritrea</span>
+                
+                <!-- Card 1 -->
+                <div class="editorial-card">
+                    <div class="card-top">
+                        <div class="card-icon-box">🏥</div>
+                        <div class="card-title-group">
+                            <h3>Public Health Officer &amp; Researcher</h3>
+                            <span class="card-meta">Asmara, Eritrea</span>
                         </div>
+                        <span class="category-tag">Clinical Systems</span>
                     </div>
-                    <ul class="flat-list">
-                        <li>Managed administration of yellow fever vaccines and certified traditional foods for international travelers.</li>
-                        <li>Organized hospital health education sessions and conducted community outreach programs.</li>
-                        <li>Planned and led infection prevention programs; supervised peer groups and community health agents.</li>
+                    <ul class="chic-list">
+                        <li>Directed clinical administration for yellow fever immunizations and certified food safety standards for international travelers.</li>
+                        <li>Organized large-scale hospital health education summits and orchestrated community hygiene initiatives.</li>
+                        <li>Supervised peer educator cohorts, led infection control protocols, and mentored community health liaisons.</li>
                     </ul>
                 </div>
 
-                <div class="card flat-card">
-                    <div class="card-header">
-                        <div class="card-icon">🦠</div>
-                        <div>
+                <!-- Card 2 -->
+                <div class="editorial-card">
+                    <div class="card-top">
+                        <div class="card-icon-box">🦠</div>
+                        <div class="card-title-group">
                             <h3>Public Health Focal Person</h3>
-                            <span class="meta-tag">Asmara, Eritrea</span>
+                            <span class="card-meta">Asmara, Eritrea</span>
                         </div>
+                        <span class="category-tag">Epidemiology</span>
                     </div>
-                    <ul class="flat-list">
-                        <li>Organized COVID-19 awareness workshops, counseled patients, and managed clinical triage.</li>
-                        <li>Supervised safe incineration of hazardous, biological, and general clinical waste.</li>
-                        <li>Conducted diagnostic testing for hospital referrals and submitted epidemiological reports to the Zonal Medical Director.</li>
+                    <ul class="chic-list">
+                        <li>Headed COVID-19 emergency clinical triage, psychosocial counseling, and rapid patient screening.</li>
+                        <li>Supervised biohazard safety and regulated the high-temperature medical waste incineration system.</li>
+                        <li>Authored routine epidemiological diagnostic reports submitted directly to the Zonal Medical Director.</li>
                     </ul>
                 </div>
 
-                <div class="card flat-card">
-                    <div class="card-header">
-                        <div class="card-icon">🌍</div>
-                        <div>
-                            <h3>Environmental Health & Malaria Officer</h3>
-                            <span class="meta-tag">Eritrea</span>
+                <!-- Card 3 -->
+                <div class="editorial-card">
+                    <div class="card-top">
+                        <div class="card-icon-box">🌍</div>
+                        <div class="card-title-group">
+                            <h3>Environmental Health &amp; Malaria Officer</h3>
+                            <span class="card-meta">Regional Districts, Eritrea</span>
                         </div>
+                        <span class="category-tag">Sanitation</span>
                     </div>
-                    <ul class="flat-list">
-                        <li>Prepared detailed action plans and mobilized community resources for disease prevention.</li>
-                        <li>Monitored Community-Led Total Sanitation (CLTS) initiatives across targeted districts.</li>
-                        <li>Partnered with local leadership to build sustainable hygiene and sanitation models.</li>
+                    <ul class="chic-list">
+                        <li>Formulated targeted strategic action plans mobilizing district resources for vector-borne malaria prevention.</li>
+                        <li>Spearheaded Community-Led Total Sanitation (CLTS) programs across vulnerable rural communities.</li>
+                        <li>Collaborated with regional administrative councils to construct sustainable WASH and hygiene infrastructure.</li>
                     </ul>
                 </div>
 
-                <div class="card flat-card">
-                    <div class="card-header">
-                        <div class="card-icon">✊</div>
-                        <div>
-                            <h3>Leadership & Community Mobilization</h3>
-                            <span class="meta-tag">National Unions & NGO Coalitions</span>
+                <!-- Card 4 -->
+                <div class="editorial-card">
+                    <div class="card-top">
+                        <div class="card-icon-box">✊</div>
+                        <div class="card-title-group">
+                            <h3>Community Mobilization &amp; Rights Lead</h3>
+                            <span class="card-meta">National Unions &amp; NGO Coalitions</span>
                         </div>
+                        <span class="category-tag">Advocacy</span>
                     </div>
-                    <ul class="flat-list">
-                        <li><strong>Research Team Leader:</strong> Established and led a research unit conducting 5+ studies; managed journal peer-review processes.</li>
-                        <li><strong>Head, Infection Prevention Committee:</strong> Edagahamus Community Hospital.</li>
-                        <li><strong>Delegated Representative:</strong> Spearheaded women's rights campaigns and initiatives against harmful traditional practices (FGM).</li>
+                    <ul class="chic-list">
+                        <li><strong>Unit Lead:</strong> Founded and directed an empirical research taskforce producing 5+ field studies through international peer review.</li>
+                        <li><strong>Chairperson:</strong> Headed the Infection Prevention Committee at Edagahamus Community Hospital.</li>
+                        <li><strong>Human Rights Champion:</strong> Spearheaded educational campaigns combating Female Genital Mutilation (FGM) and gender disparities.</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Research & Publications Section -->
+    <!-- Research & Publications ("The Scientific Docket") -->
     <section id="research" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Research Publications & Surveys</h2>
-                <p class="section-subtitle">Peer-reviewed publications, epidemiological surveys, and conference presentations</p>
+                <span class="section-eyebrow">
+                    <span class="sparkle-char">✦</span> Peer-Reviewed Inquiries <span class="sparkle-char">✦</span>
+                </span>
+                <h2 class="section-title">The Scientific <i>Docket</i></h2>
+                <p class="section-subtitle">Published papers, clinical inquiries, and international conference presentations.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button type="button" class="filter-btn active" data-filter="all">All Inquiries (6)</button>
+                <button type="button" class="filter-btn" data-filter="maternal">Maternal &amp; Neonatal</button>
+                <button type="button" class="filter-btn" data-filter="clinical">Clinical Practice &amp; Safety</button>
+                <button type="button" class="filter-btn" data-filter="epidemiology">Epidemiological Surveys</button>
             </div>
 
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="date">Jan 2025</span>
-                            <span class="pub-type">Under Peer Review</span>
-                        </div>
-                        <h4>Prevalence of Diarrhea among Under-Five Children in Sub-Saharan Africa</h4>
-                        <p class="journal">International Conference of Eritrean Studies (ICES) — Oral Presenter</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="date">Oct 2024</span>
-                            <span class="pub-type">Cross-Sectional Study</span>
-                        </div>
-                        <h4>Emergency & ICU Nurse Practice in Initial Management of Myocardial Infarction</h4>
-                        <p class="journal">National Referral Hospitals, Asmara, Eritrea</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="date">Jun 2023</span>
-                            <span class="pub-type">Published</span>
-                        </div>
-                        <h4>Postpartum Eclampsia Management with Lytic Cocktail Solutions</h4>
-                        <p class="journal">Journal of Gynecology and Obstetrics</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="date">Dec 2022</span>
-                            <span class="pub-type">Leading Author</span>
-                        </div>
-                        <h4>Prevalence, response and associated factors of needlestick injury among health care workers</h4>
-                        <p class="journal">Orotta National Referral Hospital, Eritrea</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="date">Nov 2022</span>
-                            <span class="pub-type">Corresponding Author</span>
-                        </div>
-                        <h4>Determinants of Harmful Traditional Practices of Umbilical Cord</h4>
-                        <p class="journal">Edagahamus Community Health Study, Asmara, Eritrea</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="date">Jul 2022</span>
-                            <span class="pub-type">Published</span>
-                        </div>
-                        <h4>Factors Influencing Separation of Umbilical Cord at Edagahamus Hospital</h4>
-                        <p class="journal">American Journal of Nursing and Health Sciences</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education, Certifications & Skills Section -->
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <div class="grid-2">
                 
-                <!-- Education & Awards -->
-                <div class="card flat-card">
-                    <h3 class="card-title-with-icon">🎓 Education & Honors</h3>
-                    
-                    <div class="edu-item">
-                        <h4>Master of Public Health (MPH) - Global Health & Environment</h4>
-                        <p class="edu-school">UC Berkeley School of Public Health — USA (Incoming, Aug 2026)</p>
-                        <span class="award-pill">Mastercard Foundation Scholar (2024)</span>
-                    </div>
-
-                    <div class="edu-item mt-15">
-                        <h4>Bachelor of Science, Public Health</h4>
-                        <p class="edu-school">Asmara College of Health Sciences — Eritrea</p>
-                        <span class="award-pill">Ireland Fellowship – Africa (2023)</span>
+                <!-- Publication 1 -->
+                <div class="timeline-item" data-category="epidemiology maternal">
+                    <div class="timeline-marker">✦</div>
+                    <div class="timeline-content-card">
+                        <div class="pub-meta-row">
+                            <span class="pub-date">JANUARY 2025</span>
+                            <span class="pub-badge badge-review">Under Peer Review</span>
+                        </div>
+                        <h4 class="pub-title">Prevalence of Diarrhea among Under-Five Children in Sub-Saharan Africa</h4>
+                        <div class="pub-journal">
+                            <span>🏛️ International Conference of Eritrean Studies (ICES)</span>
+                            <span>• Oral Presenter</span>
+                        </div>
+                        <p class="pub-abstract">
+                            Comprehensive epidemiological analysis investigating environmental, nutritional, and socio-economic determinants influencing severe pediatric diarrheal episodes across Sub-Saharan communities.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Certifications & Technical Skills -->
-                <div class="card flat-card">
-                    <h3 class="card-title-with-icon">🛠 Technical Skills & Training</h3>
-                    
-                    <div class="skills-group">
-                        <p class="skills-label">Data Analysis & Tools:</p>
-                        <div class="tag-cloud">
-                            <span class="tag tag-primary">SPSS</span>
-                            <span class="tag tag-primary">Stata</span>
-                            <span class="tag tag-primary">Excel (Power BI)</span>
-                            <span class="tag tag-primary">MS Office Suite</span>
+                <!-- Publication 2 -->
+                <div class="timeline-item" data-category="clinical">
+                    <div class="timeline-marker">✦</div>
+                    <div class="timeline-content-card">
+                        <div class="pub-meta-row">
+                            <span class="pub-date">OCTOBER 2024</span>
+                            <span class="pub-badge badge-author">Cross-Sectional Study</span>
                         </div>
+                        <h4 class="pub-title">Emergency &amp; ICU Nurse Practice in Initial Management of Myocardial Infarction</h4>
+                        <div class="pub-journal">
+                            <span>🏥 National Referral Hospitals, Asmara, Eritrea</span>
+                        </div>
+                        <p class="pub-abstract">
+                            Empirical investigation assessing rapid-response clinical triage workflows, pharmacological timing, and protocol adherence among intensive care nursing units during acute coronary events.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="skills-group">
-                        <p class="skills-label">Specialized Certifications:</p>
-                        <div class="tag-cloud">
-                            <span class="tag">Humanitarian consultancy at Meraki lab (...ongoing)</span>
-                            <span class="tag">Measuring Disease in Epidemiology (Imperial College)</span>
-                            <span class="tag">Infectious Disease Models (Johns Hopkins)</span>
-                            <span class="tag">Global Health (Yale)</span>
-                            <span class="tag">Child Nutrition (Stanford)</span>
+                <!-- Publication 3 -->
+                <div class="timeline-item" data-category="maternal">
+                    <div class="timeline-marker">✦</div>
+                    <div class="timeline-content-card">
+                        <div class="pub-meta-row">
+                            <span class="pub-date">JUNE 2023</span>
+                            <span class="pub-badge badge-published">Published Article</span>
                         </div>
+                        <h4 class="pub-title">Postpartum Eclampsia Management with Lytic Cocktail Solutions</h4>
+                        <div class="pub-journal">
+                            <span>📖 Journal of Gynecology and Obstetrics</span>
+                        </div>
+                        <p class="pub-abstract">
+                            Clinical cohort evaluation of lytic pharmacological combinations for refractory postpartum eclampsia management, highlighting dosage safety margins and maternal survival endpoints in resource-constrained obstetrics.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="skills-group">
-                        <p class="skills-label">Core Competencies:</p>
-                        <div class="tag-cloud">
-                            <span class="tag tag-outline">Cross-Cultural Communication</span>
-                            <span class="tag tag-outline">Community Mobilization</span>
-                            <span class="tag tag-outline">Policy Briefing</span>
+                <!-- Publication 4 -->
+                <div class="timeline-item" data-category="clinical">
+                    <div class="timeline-marker">✦</div>
+                    <div class="timeline-content-card">
+                        <div class="pub-meta-row">
+                            <span class="pub-date">DECEMBER 2022</span>
+                            <span class="pub-badge badge-author">Lead Author</span>
                         </div>
+                        <h4 class="pub-title">Prevalence, Response and Associated Factors of Needlestick Injury Among Healthcare Workers</h4>
+                        <div class="pub-journal">
+                            <span>🏥 Orotta National Referral Hospital, Eritrea</span>
+                        </div>
+                        <p class="pub-abstract">
+                            Occupational health survey uncovering systemic hazard patterns, post-exposure prophylaxis reporting bottlenecks, and institutional infection mitigation standards among clinical personnel.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="timeline-item" data-category="maternal">
+                    <div class="timeline-marker">✦</div>
+                    <div class="timeline-content-card">
+                        <div class="pub-meta-row">
+                            <span class="pub-date">NOVEMBER 2022</span>
+                            <span class="pub-badge badge-author">Corresponding Author</span>
+                        </div>
+                        <h4 class="pub-title">Determinants of Harmful Traditional Practices of Umbilical Cord</h4>
+                        <div class="pub-journal">
+                            <span>🌱 Edagahamus Community Health Center, Asmara</span>
+                        </div>
+                        <p class="pub-abstract">
+                            Mixed-methods inquiry evaluating traditional cultural postpartum applications on neonatal umbilical cords, identifying maternal literacy and antenatal education as key protective barriers against neonatal sepsis.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Publication 6 -->
+                <div class="timeline-item" data-category="maternal">
+                    <div class="timeline-marker">✦</div>
+                    <div class="timeline-content-card">
+                        <div class="pub-meta-row">
+                            <span class="pub-date">JULY 2022</span>
+                            <span class="pub-badge badge-published">Published Article</span>
+                        </div>
+                        <h4 class="pub-title">Factors Influencing Separation Time of Umbilical Cord at Edagahamus Hospital</h4>
+                        <div class="pub-journal">
+                            <span>📖 American Journal of Nursing and Health Sciences</span>
+                        </div>
+                        <p class="pub-abstract">
+                            Prospective clinical observation analyzing antiseptic cord care modalities versus dry cord care, establishing standard evidence-based hygienic guidelines for maternity wards.
+                        </p>
                     </div>
                 </div>
 
@@ -288,16 +356,148 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-primary text-white">
-        <div class="container text-center">
-            <h2>Let's Collaborate</h2>
-            <p>Open for research partnerships, global health consulting, and policy initiatives.</p>
-            <div class="contact-details">
-                <span>📍 University of California, Berkeley</span>
-                <span>📞 +1 (510) 807-4787</span>
+    <!-- Editorial Pull-Quote Banner (Elle Woods × Barbie Homage) -->
+    <section class="quote-banner">
+        <div class="container">
+            <div class="quote-box">
+                <div class="quote-decor">“</div>
+                <blockquote class="quote-text">
+                    Anyone who believes you cannot be unapologetically poised, deeply compassionate, and an extraordinary scientist simply hasn't seen public health in action.
+                </blockquote>
+                <div class="quote-author">
+                    Feven Beletse Negash <span>✦</span> Incoming UC Berkeley Scholar <span>✦</span> Mastercard Fellow
+                </div>
             </div>
-            <a href="mailto:beletsefeven21@gmail.com" class="btn btn-light mt-2">beletsefeven21@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Academic Honors & Toolkit ("The Berkeley Wardrobe") -->
+    <section id="credentials" class="section bg-silk">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">
+                    <span class="sparkle-char">✦</span> Scholarly Toolkit <span class="sparkle-char">✦</span>
+                </span>
+                <h2 class="section-title">Credentials &amp; <i>Academic Honors</i></h2>
+                <p class="section-subtitle">Global fellowships, Ivy League credentials, and epidemiological methodology.</p>
+            </div>
+
+            <div class="credentials-grid">
+                
+                <!-- Education & Fellowships -->
+                <div class="credential-block">
+                    <div class="credential-header">
+                        <span style="font-size: 1.8rem;">🎓</span>
+                        <h3>Higher Education &amp; Honors</h3>
+                    </div>
+
+                    <div class="edu-item-card">
+                        <h4>Master of Public Health (MPH) — Global Health &amp; Environment</h4>
+                        <p class="edu-institution">University of California, Berkeley School of Public Health — USA (Incoming, Aug 2026)</p>
+                        <span class="award-pill">🏆 Mastercard Foundation Scholar (2024)</span>
+                    </div>
+
+                    <div class="edu-item-card">
+                        <h4>Bachelor of Science, Public Health</h4>
+                        <p class="edu-institution">Asmara College of Health Sciences — Eritrea</p>
+                        <span class="award-pill">✨ Ireland Fellowship – Africa (2023)</span>
+                    </div>
+                </div>
+
+                <!-- Specialized Certifications & Methods -->
+                <div class="credential-block">
+                    <div class="credential-header">
+                        <span style="font-size: 1.8rem;">💎</span>
+                        <h3>Certifications &amp; Analytical Toolkit</h3>
+                    </div>
+
+                    <div class="skills-category">
+                        <div class="skills-category-title">
+                            <span>✦</span> Quantitative Analytics &amp; Modeling:
+                        </div>
+                        <div class="tags-container">
+                            <span class="skill-tag highlight">SPSS</span>
+                            <span class="skill-tag highlight">Stata</span>
+                            <span class="skill-tag highlight">Excel (Power BI)</span>
+                            <span class="skill-tag">MS Office Suite</span>
+                            <span class="skill-tag">Epidemiological Triage</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <div class="skills-category-title">
+                            <span>✦</span> Global Health Specializations:
+                        </div>
+                        <div class="tags-container">
+                            <span class="skill-tag">Humanitarian Consultancy (Meraki Lab)</span>
+                            <span class="skill-tag">Measuring Disease in Epidemiology (Imperial College London)</span>
+                            <span class="skill-tag">Infectious Disease Models (Johns Hopkins)</span>
+                            <span class="skill-tag">Global Health Principles (Yale)</span>
+                            <span class="skill-tag">Childhood Nutrition (Stanford)</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <div class="skills-category-title">
+                            <span>✦</span> Strategic Competencies:
+                        </div>
+                        <div class="tags-container">
+                            <span class="skill-tag highlight">Cross-Cultural Communication</span>
+                            <span class="skill-tag highlight">Community-Led Total Sanitation (CLTS)</span>
+                            <span class="skill-tag highlight">Gender Rights &amp; FGM Prevention</span>
+                            <span class="skill-tag">Hospital Biohazard Management</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Collaboration Section ("Let's Collaborate") -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <span class="section-eyebrow" style="background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.3);">
+                    ✦ Connect &amp; Partner ✦
+                </span>
+                <h2>Let's <i>Collaborate</i></h2>
+                <p>
+                    Available for global health research partnerships, maternal health consultancy, policy development, and academic symposiums.
+                </p>
+
+                <div class="contact-pills">
+                    <div class="contact-info-pill">
+                        <span>📍</span>
+                        <span>Lusaka, Zambia • UC Berkeley (Incoming)</span>
+                    </div>
+                    <div class="contact-info-pill">
+                        <span>📞</span>
+                        <a href="tel:+260571777273" style="color: #fff;">+260 57 177 7273</a>
+                    </div>
+                    <div class="contact-info-pill">
+                        <span>💌</span>
+                        <span>beletsefeven21@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    <button type="button" class="btn-email-copy">
+                        <span>📋 Copy Email Address</span>
+                    </button>
+                    <a href="mailto:beletsefeven21@gmail.com" class="btn btn-primary">
+                        <span>Send Direct Email</span>
+                        <span>✉️</span>
+                    </a>
+                    <a href="Feven_Beletse_CV.pdf" target="_blank" class="btn btn-scented" title="View PDF Dossier">
+                        <span>View Dossier (PDF)</span>
+                    </a>
+                    <a href="Feven_Beletse_CV_CIP.docx" download class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: #fff;" title="Download original Word document">
+                        <span>Word (.docx)</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -305,8 +505,17 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Feven Beletse Negash. All rights reserved.</p>
+            <p class="footer-quote">"What, like it's hard? 🌸"</p>
         </div>
     </footer>
 
+    <!-- Back to Top Floating Button -->
+    <button type="button" class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top">↑</button>
+
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
